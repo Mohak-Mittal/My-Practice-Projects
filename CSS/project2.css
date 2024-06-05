@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 0 15px;
+}
+
+.facebook-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+h1 {
+    font-size: 4rem;
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+.text {
+    margin-bottom: 90px;
+}
+
+.abc {
+    font-size: 1.75rem;
+
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.input {
+    height: 50px;
+    width: 100%;
+    margin: 8px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    border: 1px solid #ccc;
+}
+.input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+/* ::placeholder {
+    color: #777;
+    font-size: 18px;
+} */
+.button {
+    background-color: #1877f2;
+    color: #fff;
+    margin-top: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease ;
+}
+.button:hover, .button:focus {
+    background-color: #0d65d9;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+.create {
+    margin: 25px;
+    height: 50px;
+    width: 55%;
+    font-size: 1.063rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+.create:hover, .create:focus {
+    background-color: #3ba626;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .facebook-page {
+        flex-direction: column;
+        text-align: center;
+    } 
+    .text {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    .abc {
+        font-size: 1.5rem;
+    }
+    form {
+        padding: 15px;
+    }
+}
