@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="CSS/Form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="innerbox">
+            <div class="box">
+                <div class="college">
+                    <h1>National Institute Of Technology</h1>
+                    <h1>Kurukshetra</h1>
+                    <h3>Registration Form for B.Tech. Programmes Even Semester of Academic Year 2023-24</h3>
+                </div>
+                <div class="college">
+                    <h3>The name, email address and photo associated with your Google Account will be recorded when you
+                        upload
+                        files and submit this form</h3>
+                </div>
+                <div class="required">
+                    <p>* Indicates required question</p>
+                </div>
+            </div>
+            <div class="name">
+                <h3>Name of the Student</h3>
+                <input type="text" placeholder="Your answer">
+            </div>
+            <div class="name">
+                <h3>Email Id</h3>
+                <input type="email" required placeholder="Your answer">
+            </div>
+            <div class="name">
+                <h3>Branch</h3>
+                <div class="branch">
+                    <select>
+                        <option value="0">Choose</option>
+                        <option value="1">Artificial Intelligence & Machine Learning</option>
+                        <option value="2">Civil Engineering</option>
+                        <option value="3">Computer Engineering</option>
+                        <option value="4">Information Technology</option>
+                        <option value="5">Electrical Engineering</option>
+                        <option value="6">Electronics & Communication Engineering</option>
+                        <option value="7">Mechanical Engineering</option>
+                        <option value="8">Mathematics & Computing</option>
+                        <option value="9">Production & Industrial Engineering</option>
+                    </select>
+                    <div class="icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Gender">
+                <h3>Gender</h3>
+                <div class="abc">
+                <label for="male">
+                    <input type="radio" value="1" name="gender" id="male">Male
+                </label>
+                <label for="female">
+                    <input type="radio" value="2" name="gender" id="female">Female
+                </label>
+            </div>
+            </div>
+            <div class="name">
+                <h3>Mobile Number</h3>
+                <input type="text" required placeholder="Your answer">
+            </div>
+            <div class="submit">
+                <button>Submit</button>
+                <div class="clear">
+                    Clear Form
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

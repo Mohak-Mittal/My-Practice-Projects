@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+form {
+    height: 100%;
+    width: 100%;
+    background-color: #f0ebf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.innerbox {
+    max-width: 700px;
+    width: 100%;
+}
+h1 {
+    font-size: 38px;
+    font-weight: 400;
+}
+.box {
+    width: 100%;
+    background-color: #fff;
+    /* padding: 20px; */
+    border-radius: 10px;
+    border-top: 12px solid #673ab7;
+    margin: 8px;
+}
+.box h3 {
+    margin: 15px 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: rgb(32, 33, 36);
+}
+.college {
+    padding: 20px;
+    width: 100%;
+    border-bottom: 2px solid rgb(215, 203, 203);
+}
+.required {
+    padding: 20px;
+    height: 60px;
+    color: red;
+}
+.name {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 8px;
+}
+.name h3, .Gender h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.name input {
+    border: none;
+    border-bottom: 2px solid rgb(202, 192, 192);
+    width: 60%;
+    padding: 5px 0;
+}
+.name input:focus {
+    outline: none;
+    border-bottom: 4px solid #673ab7;
+    width: 60%;
+    padding: 5px 0;
+}
+:placeholder-shown {
+    font-size: 15px;
+}
+select {
+   appearance: none;
+   border: 2px solid rgb(202, 192, 192);
+   width: 100%;
+   padding: 15px 15px 15px 15px;
+   font-size: 16px;
+   color: gray;
+}
+ 
+.branch {
+    position: relative;
+    width: 55%;
+    height: 50px;
+}
+
+.icon {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+select:focus {
+    outline: none;
+}
+select:hover {
+    cursor: pointer;
+}
+
+.Gender {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.abc {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+label input {
+    margin-right: 5px;
+}
+label input:hover, label input:focus {
+    cursor: pointer;
+}
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.submit button {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 5px 0;
+    height: 40px;
+    width: 100px;
+    background-color: #673ab7;
+    color: #fff;
+    font-size: 16px;
+}
+.submit button:hover {
+    cursor: pointer;
+    background-color: rgba(103, 58, 183,0.1);
+}
+.clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    color: #673ab7;
+}
+.clear:hover {
+    cursor: pointer;
+    background-color: rgba(103, 58, 183,0.05);
+}
