@@ -87,7 +87,10 @@ select {
     width: 55%;
     height: 50px;
 }
-
+.choiceOfBranch{
+    /* border: 2px solid black; */
+    border-radius:25px;
+}
 .icon {
     width: 50px;
     height: 100%;
@@ -165,4 +168,7 @@ input[type="radio"] {
 .clear:hover {
     cursor: pointer;
     background-color: rgba(103, 58, 183,0.05);
+}
+.impmark{
+    color: red;
 }

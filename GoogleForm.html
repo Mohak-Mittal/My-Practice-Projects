@@ -33,18 +33,18 @@
                 </div>
             </div>
             <div class="name">
-                <h3>Name of the Student</h3>
-                <input type="text" placeholder="Your answer">
+                <h3>Name of the Student<sup class="impmark">*</sup></h3>
+                <input type="text" required placeholder="Your answer">
             </div>
             <div class="name">
-                <h3>Email Id</h3>
+                <h3>Email Id<sup class="impmark">*</sup></h3>
                 <input type="email" required placeholder="Your answer">
             </div>
             <div class="name">
                 <h3>Branch</h3>
                 <div class="branch">
-                    <select>
-                        <option value="0">Choose</option>
+                    <select class="choiceOfBranch"  id="options" name="options" required>
+                        <option value="" disabled selected>Choose</option>
                         <option value="1">Artificial Intelligence & Machine Learning</option>
                         <option value="2">Civil Engineering</option>
                         <option value="3">Computer Engineering</option>
