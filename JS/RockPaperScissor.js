@@ -29,6 +29,29 @@ const showWinner = (userwin, userChoice, compChoice) => {
         document.getElementById("user-score").innerText = userScore;
         document.getElementById("comp-score").innerText = compScore;
     }
+    if (userScore === 10) {
+        setTimeout(function() {
+            alert("You Wins!");
+        }, 100); 
+        userScore = 0;
+        compScore = 0;
+        setTimeout(function() {
+            document.getElementById("user-score").innerText = userScore;
+            document.getElementById("comp-score").innerText = compScore;
+            }, 200);
+    }
+
+    else if(compScore===10) {
+        setTimeout(function() {
+            alert("Computer Wins!");
+        }, 100); 
+        userScore = 0;
+        compScore = 0;
+        setTimeout(function() {
+        document.getElementById("user-score").innerText = userScore;
+        document.getElementById("comp-score").innerText = compScore;
+        }, 200);
+    }
 };
 
 let playGame = (userChoice) => {
