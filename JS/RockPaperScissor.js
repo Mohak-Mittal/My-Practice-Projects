@@ -38,7 +38,9 @@ const showWinner = (userwin, userChoice, compChoice) => {
         setTimeout(function() {
             document.getElementById("user-score").innerText = userScore;
             document.getElementById("comp-score").innerText = compScore;
-            }, 200);
+            msg.innerText = "Play your Move"
+            msg.style.backgroundColor = "#081b31"
+            }, 100);
     }
 
     else if(compScore===10) {
@@ -50,7 +52,9 @@ const showWinner = (userwin, userChoice, compChoice) => {
         setTimeout(function() {
         document.getElementById("user-score").innerText = userScore;
         document.getElementById("comp-score").innerText = compScore;
-        }, 200);
+        msg.innerText = "Play your Move"
+        msg.style.backgroundColor = "#081b31"
+        }, 100);
     }
 };
 
@@ -82,16 +86,13 @@ choices.forEach((choice) => {
 });
 
 
-function value(num) {
+let value = (num) => {
     switch(num) {
         case 0:
             return "rock";
-            break;
         case 1:
             return "paper";
-            break;
         case 2:
             return "scissor";
-            break;
     }
-}
+};
