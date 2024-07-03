@@ -1,4 +1,5 @@
 let numbers = document.querySelectorAll("#numbers");
+let percentage = document.querySelector("#percentage");
 let display = document.querySelector(".expression");
 let operators = ['+','-','*','/','%'];
 let resultDisplayed = false;
@@ -11,7 +12,17 @@ numbers.forEach(val => {
             display.innerText = "";
         }
         const str = val.innerText;
-        display.innerText += str;
+        const exp = display.innerText + str;
+        if(exp.length>15) {
+            alert("Input Limit Reached!");
+        } else {
+        display.innerText = exp;
+        }
+
+        if(display.innerText.length>11) {
+            display.style.fontSize = "35px";
+        }
+        
         check(display.innerText);
     });
 });
@@ -52,6 +63,9 @@ remove.addEventListener("click", () => {
     let str = display.innerText;
     str = str.slice(0,str.length-1);
     display.innerText = str;
+    if(display.innerText.length<=11) {
+        display.style.fontSize = "48px";
+    }
 });
 
 
@@ -72,3 +86,10 @@ answer.addEventListener("click", () => {
     }
 });
 
+
+
+percentage.addEventListener("click", () => {
+    const exp = display.innerText;
+    const val = math.evaluate(exp)/100;
+    display.innerText = val;
+});
