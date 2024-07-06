@@ -37,7 +37,7 @@ const check = (str) => {
            display.innerText = "";
         }, 100);
     }
-    if(str[str.length-1]=='.') {
+    if(str.length>1 && str[str.length-1]=='.') {
         try {
             let result = math.evaluate(str);
         } catch (e) {

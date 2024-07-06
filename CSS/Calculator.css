@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     background-color: blue;
     padding: 15px 9px;
-
+}
 
 .box {
     height: 4rem;
@@ -58,10 +58,20 @@
 
 
 .operator {
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     font-size: 30px;
 }
 
 #delete {
     color: red;
+}
+
+.box:hover {
+    background-color: rgb(255, 255, 255 , 0.9)
+}
+.operator:hover {
+    background-color: rgb(128, 128, 128, 0.9);
+}
+#equal:hover {
+    background-color: rgb(255, 165, 0, 0.9)
 }
