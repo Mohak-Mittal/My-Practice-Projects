@@ -7,11 +7,12 @@ let resultDisplayed = false;
 
 numbers.forEach(val => {
     val.addEventListener("click", () => {
+        const str = val.innerText;
         if(resultDisplayed) {
             resultDisplayed = false;
-            display.innerText = "";
+            if(str>='0' && str<='9')
+                display.innerText = "";
         }
-        const str = val.innerText;
         const exp = display.innerText + str;
         if(exp.length>15) {
             alert("Input Limit Reached!");
@@ -31,7 +32,7 @@ numbers.forEach(val => {
 const check = (str) => {
     if(operators.includes(str[str.length-1]) && operators.includes(str[str.length-2])) {
         setTimeout(function() {
-            alert("Invalid Input! Try Again");
+            alert("Invalid Input! You cannot take 2 operator consecutively");
         }, 100);
         setTimeout(function() { 
            display.innerText = "";
@@ -71,6 +72,7 @@ remove.addEventListener("click", () => {
 
 const answer = document.querySelector("#equal")
 answer.addEventListener("click", () => {
+    if(display.innerText=="") alert("No input is taken");
     try {
         let expression = display.innerText;
         let result = math.evaluate(expression)
@@ -79,7 +81,6 @@ answer.addEventListener("click", () => {
         }
     resultDisplayed = true;
     display.innerText = result;
-    console.log(result);
     } catch (e) {
         alert("Invalid Input! Try Again");
         display.innerText = "";
